@@ -18,7 +18,7 @@ class CreateNewsTest extends TestCase
      * Whenever a \Filament\Forms\Concerns\InteractsWithForms is initialized, the initial state of "oldFormState" is null.
      * 
      * When Livewire does update a property, the "updating" event will:
-     * - trigger "updatingInteractsWithForms" trait hook & write update to "oldFormState"
+     * - trigger "updatingInteractsWithForms" trait hook & write current to "oldFormState"
      * - update the property.
      * 
      * However, when Livewire does update multiple properties at once, it will effectively repeat mentioned process for each property.
